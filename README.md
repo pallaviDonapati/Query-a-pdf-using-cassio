@@ -4,15 +4,18 @@ Overview
 
 This project enables querying PDF documents stored in Astra DB by extracting content, embedding it using OpenAI embeddings, and storing the embeddings in a Cassandra vector store. Users can query the system with natural language questions, and the project retrieves relevant document content based on vector similarity, generating answers with the OpenAI language model.
 
+
 Project Overview
 
 This repository demonstrates how to use Astra DB (Cassandra) and OpenAI to create a question-answering system. The pipeline extracts text from a PDF, splits it into chunks, embeds those chunks, and stores the embeddings in Astra DB. When users submit queries, the system retrieves the most relevant document chunks from Astra DB using vector similarity, and OpenAI generates answers based on those chunks.
+
 
 Repository Contents
 
 app.py: Main code for extracting text from PDFs, embedding with OpenAI, storing in Astra DB, and querying with natural language.
 
 requirements.txt: Lists all necessary dependencies to run the project.
+
 
 Key Features
 
@@ -25,6 +28,7 @@ Embedding: Use OpenAI embeddings to generate vector representations of the docum
 Cassandra Vector Store: Store and retrieve the embeddings in Astra DB, using Cassandra for vector search.
 
 Query Answering: Retrieve relevant chunks from Astra DB using vector similarity and generate answers with OpenAI.
+
 
 Model Interaction
 
